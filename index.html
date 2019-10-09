@@ -202,23 +202,31 @@
           </li>
           <li>
               <p>
-                  This is an example of blob detection on the 20x26 image.
+                  This is an example of blob detection on the 20x26 image in the blue colorspace.
               </p>
               <img src="images/heatmap.png" alt="blob detection" width="320" height="240">
           </li>
+          <li>
+              <p>
+                  But, as we can see in the image below, the presence of white signals on the
+                  road creates a distraction, making the region proposal more complicated.
+              </p>
+              <img src="images/white paint.png" alt="white paint" width="320" height="240">
+              <img src="images/distractions.png" alt="distractions" width="320" height="240">
+          </li>
         <li>
-          <p>The presence of white signals on the road creates a distraction. An operation
-            is proposed in order to avoid this effect. </p>
+            <p>
+                With this, the white details in the image are superseded and the remaining
+                are the areas where a possible blue sign is located. After this operation, the
+                image is normalized again..
+            </p>
+            <img src="images/only_blue.png" alt="only blue" width="320" height="240">
         </li>
         <li>
-          <p>Using this new method, a simple algorithm has been developed. It
-            works just fine with some images but returns an incorrect output
-            with some others.</p>
-        </li>
-        <li>
-          <p>Further development is needed, but it seems this is going to be
-            simple enough to get solved. Even without a neural network yet, we
-            are getting interesting results. </p>
+            <p>
+                Further development will concentrate on applying the feature descriptor 
+                HOG on the areas highlighted by the previous step.
+            </p>
         </li>
       </ul>
       <p>That's for now.</p>
