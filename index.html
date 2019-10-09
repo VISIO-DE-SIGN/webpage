@@ -99,9 +99,34 @@
             the “I am not a robot” button is actually a robot. </p>
         </li>
       </ul>
-      <p> To accomplish this objective, we will be using image computing, and a
-        neural network to decide if an input contains a sign, returning its
-        location in that case.</p>
+        <br />
+        <h4>
+            The methodology
+        </h4>
+      <p>
+          We will divide the detection and classification phases, so different 
+          techniques can be applied to each part. For the detection, we will use
+          traditional computer vision techniques as HOG combined with clustering
+          for image segmentation. The estimation of the regions of interest will 
+          be made from that information.
+      </p>
+      <p>
+          Once a ROI is generated, it will be transferred to a convolutional
+          Neural Network for the classification part. For the CNN a pretrained
+          network will be used in order to decrease the learning time.
+      </p>
+      <p>
+          It is also interesting to split detection and classification because
+          there is a larger number of images of traffic signs for the classification
+          problem than images for the detection part. This will allow to train our
+          model on a wider variety of images.
+      </p>
+      <p>
+          The choice is made for purely didactic reasons, since the Visio De-Sign
+          team considers it to be one of the best ways to apply the knowledge
+          acquired in the Computer Vision course of the Master in Automation and
+          Robotics at the UPM.
+      </p>
     </div>
     <div id="team" class="tabcontent" style="color:#fff" ;="">
       <h3>The Team</h3>
