@@ -69,7 +69,8 @@
           border-top: none;
         }
 		</style>
-    <div style="text-align: center;"><img src="file:///C:/Users/hugo_/Documents/Master/Visi%C3%B3n%20por%20computador/Proyecto/Web/logo_black.PNG"
+    <div style="text-align: center;"><img src="images/logo_black.PNG"
+
         alt=""><br>
     </div>
     <div class="tab"> <button class="tablinks" onclick="openCity(event, 'project')">The
@@ -77,56 +78,71 @@
         Team</button> <button class="tablinks" onclick="openCity(event, 'achievement')">The
         Achievement</button> <button class="tablinks" onclick="openCity(event, 'about')">The
         Credit</button> </div>
-    <div id="project" class="tabcontent" style="color:#fff" ;="">
-      <h3>The Project</h3>
-      <p><br>
-        The Visio De-sign project is a work developed by four people to the
-        subject ìComputer Visionî, from the Automatics and Robotics Masterís
-        degree in Universidad PolitÈcnica de Madrid. </p>
-      <p>And, whatís it about? Well, Ö the field and goal could have been almost
-        anything, but in our case, we have decided to focus on street signs
-        recognition, mainly due to two factors: </p>
-      <ul>
-        <li>
-          <p>The first one is just about current technology and developments in
-            the personal vehicle industry: we need cars, among others, to be
-            smarter each day, being capable of extract information from the
-            environment and understand it like a human does.</p>
-        </li>
-        <li>
-          <p>The second one is personal: since we are tired of answering sign
-            related captcha, it would be interesting that the entity who press
-            the ìI am not a robotî button is actually a robot. </p>
-        </li>
-      </ul>
+    
+    <div id="proyect" class="tabcontent" style="color:#fff" ;="">
+        <h3>The Project</h3>
+        <p>
+            <br>
+            The Visio De-sign project is a work developed by four people to the
+            subject ‚ÄúComputer Vision‚Äù, from the Automatics and Robotics Master‚Äôs
+            degree in Universidad Polit√©cnica de Madrid.
+        </p>
+        <p>
+            And, what‚Äôs it about? Well, ‚Ä¶ the field and goal could have been almost
+            anything, but in our case, we have decided to focus on street signs
+            recognition, mainly due to two factors:
+        </p>
+        <ul>
+            <li>
+                <p>
+                    The first one is just about current technology and developments in
+                    the personal vehicle industry: we need cars, among others, to be
+                    smarter each day, being capable of extract information from the
+                    environment and understand it like a human does.
+                </p>
+            </li>
+            <li>
+                <p>
+                    The second one is personal: since we are tired of answering sign
+                    related captcha, it would be interesting that the entity who press
+                    the ‚ÄúI am not a robot‚Äù button is actually a robot.
+                </p>
+            </li>
+        </ul>
         <br />
+
         <h4>
             The methodology
         </h4>
-      <p>
-          We will divide the detection and classification phases, so different 
-          techniques can be applied to each part. For the detection, we will use
-          traditional computer vision techniques as HOG combined with clustering
-          for image segmentation. The estimation of the regions of interest will 
-          be made from that information.
-      </p>
-      <p>
-          Once a ROI is generated, it will be transferred to a convolutional
-          Neural Network for the classification part. For the CNN a pretrained
-          network will be used in order to decrease the learning time.
-      </p>
-      <p>
-          It is also interesting to split detection and classification because
-          there is a larger number of images of traffic signs for the classification
-          problem than images for the detection part. This will allow to train our
-          model on a wider variety of images.
-      </p>
-      <p>
-          The choice is made for purely didactic reasons, since the Visio De-Sign
-          team considers it to be one of the best ways to apply the knowledge
-          acquired in the Computer Vision course of the Master in Automation and
-          Robotics at the UPM.
-      </p>
+        <p>
+            We will divide the detection and classification phases, so different
+            techniques can be applied to each part. For the detection, we will use
+            traditional computer vision techniques as HOG combined with clustering
+            for image segmentation. The estimation of the regions of interest will
+            be made from that information.
+        </p>
+        <p>
+            Once a ROI is generated, it will be transferred to a convolutional
+            Neural Network for the classification part. For the CNN a pretrained
+            network will be used in order to decrease the learning time.
+        </p>
+        <p>
+            It is also interesting to split detection and classification because
+            there is a larger number of images of traffic signs for the classification
+            problem than images for the detection part. This will allow to train our
+            model on a wider variety of images.
+        </p>
+        <p>
+            The choice is made also for didactic reasons, since the Visio De-Sign
+            team considers it to be one of the best ways to apply the knowledge
+            acquired in the Computer Vision course of the Master in Automation and
+            Robotics at the UPM.
+        </p>
+        <p>
+            Our goal for the detection part of the problem would be something
+            like that:
+        </p>
+        <img src="images/detection.png" alt="signal detected" width="320" height="240">
     </div>
     <div id="team" class="tabcontent" style="color:#fff" ;="">
       <h3>The Team</h3>
@@ -135,7 +151,7 @@
         a little bit closer to the project. These are our lives and stories.
         Nice to meet you!</p>
       <hr>
-      <h4>Victor Cadix MartÌn</h4>
+      <h4>Victor Cadix Mart√≠n</h4>
       <h5>Occupation: Technology leader</h5>
       <p style="line-height:25px">I am an Industrial Electronics and Automatics
         engineer. Although I was quickly interested in the electronics stuff, I
@@ -146,96 +162,114 @@
         an interplanetary species, but not because we ran out of resources in our
         current one.</p>
       <hr>
-      <h4>Alejandro Casa RodrÌguez</h4>
+      <h4>Alejandro Casa Rodr√≠guez</h4>
       <h5>Occupation: Programming Chief</h5>
-      <p style="line-height:25px">AquÌ van las cosas de Alex</p>
+      <p style="line-height:25px">Aqu√≠ van las cosas de Alex</p>
       <hr>
-      <h4>Hugo de la Quintana BÈjar</h4>
+      <h4>Hugo de la Quintana B√©jar</h4>
       <h5>Occupation: Executive Officer</h5>
-      <p style="line-height:25px">ìI am a student from the University of Alcal·,
-        with a bachelorís degreein Electronic Engineering and Industrial
+      <p style="line-height:25px">‚ÄúI am a student from the University of Alcal√°,
+        with a bachelor‚Äôs degreein Electronic Engineering and Industrial
         Automatics. I have also a programming title of Android apps, given by
         the EOI. I would like to start working in a job related to automatics,
         and specifically in interface development to improve communication
         between humans and robots in an industrial environment, also developing
         my skills as an application designer and applying system control
-        knowledge. When Iím not meshing with job related stuff, I love going
+        knowledge. When I‚Äôm not meshing with job related stuff, I love going
         cycling and hiking to the mountain. Another of my main hobbies is
         traveling to other countries, because I can know about other cultures,
-        and thatís a point that combines too well with my major passion: beer. I
+        and that‚Äôs a point that combines too well with my major passion: beer. I
         absolutely love finding new tastes and share these experiences with my
-        friends.î</p>
+        friends.‚Äù</p>
       <blockquote>"Nada cambia, si nada cambia" -K</blockquote>
       <hr>
       <h4>Pablo J. Rosado Junquera</h4>
       <h5>Occupation: Documentation</h5>
-      <p style="line-height:25px">ìI am a Materials Engineer and an Energy
+      <p style="line-height:25px">‚ÄúI am a Materials Engineer and an Energy
         Engineer, with a great passion about mathematics and computer science. I
         have studied programming by my own for a few years, and now I want to
         get a title to prove these skills, and some others I expect to get in
-        the course. Talking about job, I ëjustí hope I find motivation, being
+        the course. Talking about job, I ‚Äòjust‚Äô hope I find motivation, being
         that achieved through a combination of good salaries, work conditions
         and interesting projects, because this will make me feel both important
         to the company and encouraged to improve every single day. To achieve
-        that, Iím willing to seek abroad, as soon as I finish my current degree.
+        that, I‚Äôm willing to seek abroad, as soon as I finish my current degree.
         My free time is always spent with the people I care, with simple but
         lovely afternoons. On the other hand, sometimes I enjoy playing online
-        videogames to chill out. I also love traveling, but I haven¥t had yet
+        videogames to chill out. I also love traveling, but I haven¬¥t had yet
         enough resources to visit a lot of places I would like to, so I will
-        have a long to do list in the future.î</p>
+        have a long to do list in the future.‚Äù</p>
       <blockquote>"Ironic dormouse"-A</blockquote>
     </div>
     <div id="achievement" class="tabcontent" style="color:#fff" ;="">
       <h3>The Achievement</h3>
       <h4>Update: 08/10/2019</h4>
       <ul>
+          <li>
+              <p>
+                  In order to obtain the regions of interest, the image has been set
+                  to a resolution of 20x26. This decision has been made because it is
+                  the minimum amount of information needed to be able to extract the
+                  relevant regions (where a signal can be) and remove uniform colour
+                  areas.
+              </p>
+              <img src="images/original.png" alt="Original" width="355" height="270">
+              <img src="images/downsampled.png" alt="downsampled" width="355" height="270">
+          </li>
+          <li>
+              <p>
+                  This is an example of blob detection on the 20x26 image in the blue colorspace.
+              </p>
+              <img src="images/heatmap.png" alt="blob detection" width="320" height="240">
+          </li>
+          <li>
+              <p>
+                  But, as we can see in the image below, the presence of white signals on the
+                  road creates a distraction, making the region proposal more complicated.
+              </p>
+              <img src="images/white paint.png" alt="white paint" width="320" height="240">
+              <img src="images/distractions.png" alt="distractions" width="320" height="240">
+          </li>
         <li>
-          <p>In order to obtain the regions of interest, the image has been set
-            to a resolution of 20x26. This decision has been made because it is
-            the minimum amount of information needed to be able to extract the
-            relevant regions (where a signal can be) and remove uniform colour
-            areas.</p>
+            <p>
+                With this, the white details in the image are superseded and the remaining
+                are the areas where a possible blue sign is located. After this operation, the
+                image is normalized again..
+            </p>
+            <img src="images/only_blue.png" alt="only blue" width="320" height="240">
         </li>
         <li>
-          <p>The presence of white signals on the road creates a distraction. A
-            new image operation is proposed to avoid this effect. </p>
-        </li>
-        <li>
-          <p>Using this new method, a simple algorithm has been developed. It
-            works just fine with some images but returns an incorrect output
-            with some others.</p>
-        </li>
-        <li>
-          <p>Further development is needed, but it seems this is going to be
-            simple enough to get solved. Even without a neural network yet, we
-            are getting interesting results. </p>
+            <p>
+                Further development will concentrate on applying the feature descriptor 
+                HOG on the areas highlighted by the previous step.
+            </p>
         </li>
       </ul>
-      <p>AquÌ van las cosas del achievement.</p>
+      <p>That's for now.</p>
     </div>
     <div id="about" class="tabcontent" style="color:#fff" ;="">
       <h3>The Credit</h3>
       <p>Some scientific articles: </p>
       <ol>
-        <li>S. J. Pan and Q. Yang, ìA Survey on Transfer Learning,î IEEE Trans.
-          Knowl. Data Eng., pp. 1345ñ1359, 2010.</li>
-        <li>M. Mathias, R. Timofte, R. Benenson, and L. Van Gool, ìTraffic sign
-          recognition 2014; How far are we from the solution?,î 2013 Int. Jt.
-          Conf. Neural Networks, pp. 1ñ8.</li>
-        <li>C. Yao, F. Wu, H. Chen, X. Hao, and Y. Shen, ìTRAFFIC SIGN
+        <li>S. J. Pan and Q. Yang, ‚ÄúA Survey on Transfer Learning,‚Äù IEEE Trans.
+          Knowl. Data Eng., pp. 1345‚Äì1359, 2010.</li>
+        <li>M. Mathias, R. Timofte, R. Benenson, and L. Van Gool, ‚ÄúTraffic sign
+          recognition 2014; How far are we from the solution?,‚Äù 2013 Int. Jt.
+          Conf. Neural Networks, pp. 1‚Äì8.</li>
+        <li>C. Yao, F. Wu, H. Chen, X. Hao, and Y. Shen, ‚ÄúTRAFFIC SIGN
           RECOGNITION USING HOG-SVM AND GRID SEARCH School of Electronic and
           Information Engineering , Beijing Jiaotong University , Beijing ,
-          China,î 2014 12th Int. Conf. Signal Process., pp. 962ñ965, 2014.</li>
-        <li>Y. Lai, N. Wang, Y. Yang, and L. Lin, ìTraffic Signs Recognition and
-          Classification based on Deep Feature Learning,î pp. 622ñ629, 2018.</li>
-        <li>M. R-cnn, P. Doll, and R. Girshick, ìMask R-CNN.î</li>
-        <li>S. Ren, K. He, R. Girshick, and J. Sun, ìFaster R-CNN&#8239;: Towards
-          Real-Time Object Detection with Region Proposal Networks,î pp. 1ñ14.</li>
+          China,‚Äù 2014 12th Int. Conf. Signal Process., pp. 962‚Äì965, 2014.</li>
+        <li>Y. Lai, N. Wang, Y. Yang, and L. Lin, ‚ÄúTraffic Signs Recognition and
+          Classification based on Deep Feature Learning,‚Äù pp. 622‚Äì629, 2018.</li>
+        <li>M. R-cnn, P. Doll, and R. Girshick, ‚ÄúMask R-CNN.‚Äù</li>
+        <li>S. Ren, K. He, R. Girshick, and J. Sun, ‚ÄúFaster R-CNN&#8239;: Towards
+          Real-Time Object Detection with Region Proposal Networks,‚Äù pp. 1‚Äì14.</li>
         <li>W. Liu, D. Anguelov, D. Erhan, C. Szegedy, S. Reed, C. Fu, and A. C.
-          Berg, ìSSD&#8239;: Single Shot MultiBox Detector.î</li>
-        <li>J. Redmon, S. Divvala, R. Girshick, and A. Farhadi, ìYou Only Look
-          Once: Unified, Real-Time Object Detection.î</li>
-        <li>J. Redmon and A. Farhadi, ìYOLO9000: Better, Faster, Stronger.î</li>
+          Berg, ‚ÄúSSD&#8239;: Single Shot MultiBox Detector.‚Äù</li>
+        <li>J. Redmon, S. Divvala, R. Girshick, and A. Farhadi, ‚ÄúYou Only Look
+          Once: Unified, Real-Time Object Detection.‚Äù</li>
+        <li>J. Redmon and A. Farhadi, ‚ÄúYOLO9000: Better, Faster, Stronger.‚Äù</li>
         <li>A Novel Genetically Optimized Convolutional Neural Network for
           Traffic Sign Recognition: A New Benchmark on Belgium and Chinese
           Traffic Sign Datasets.</li>
@@ -258,7 +292,7 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-</script> <footer>VisiÛn por Computador - Universidad PolitÈcnica de Madrid -
+</script> <footer>Visi√≥n por Computador - Universidad Polit√©cnica de Madrid -
       2019 </footer>
   </body>
 </html>
