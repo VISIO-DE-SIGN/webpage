@@ -1,0 +1,116 @@
+body{
+	background: #191818;
+	font-family: Arial;
+}
+ul {
+	line-height:25px;
+}
+.achievement_photos{
+  height:270px;
+  width:355px;
+}
+.profile_div{
+  height:375px;
+	display:inline-block;
+}
+.profile_photos{
+  height:375px;
+  width:225px;
+	vertical-align:top;
+	float:right;
+	/*display:inline-block;
+  horizontal-align:right;*/
+}
+.foooter{
+	margin: 15px 50px;
+	padding: 5px;
+	background: #FFF;
+	text-align: center;
+  font-size: 20px;
+}
+h3{
+	text-align: center;
+	font-size: 30px;
+	text-decoration:underline;
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+/* Style of orderer list*/
+        ol {
+            counter-reset: item;
+        }
+
+            ol li {
+                font: 14px/21px Arial, Verdana;
+                list-style: none;
+                *list-style: decimal; /* IE7 e IE6*/
+                padding: 4px 8px;
+            }
+
+                ol li:before {
+                    display: inline-block;
+                    content: counter(item) "- ";
+                    counter-increment: item;
+                    background-color: #323232;
+                    color: #fbfbfb;
+                    font: bold 16px Arial, Verdana;
+                    padding: 0 4px;
+                    margin: 0 4px;
+                }
+
+                ol li ol li:before {
+                    font: bold 14px Arial, Verdana;
+                    padding: 0 2px;
+                }
+
+/* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #bbbbbb;
+            margin:0px 50px;
+						text-align: center;
+						
+        }
+/* Style the buttons inside the tab */
+            .tab button {
+                background-color: inherit;
+                float: center;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+/* Change background color of buttons on hover (boton sobre el que esta el cursor)*/
+                .tab button:hover {
+                    background-color: #ddd;
+                }
+/* Create an active/current tablink class (boton seleccionado)*/
+                .tab button.active {
+                    background-color: #ccc;
+                }
+
+
+/* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 30px;
+            border: 1px solid #ccc;
+            border-top: none;
+						margin:0px 50px;
+						color:#fff
+        }
+
+
+/* Style the tab links */
+        .tablinks{
+          margin:0px 50px;
+        }
+
+
+/* Style the logo */
+				.logo{
+				text-align: center
+				}
