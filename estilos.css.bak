@@ -13,7 +13,15 @@ ul {
   height:375px;
 	display:inline-block;
 }
-.profile_photos{
+.profile_photos_1{
+  height:375px;
+  width:225px;
+	vertical-align:top;
+	float:right;
+	/*display:inline-block;
+  horizontal-align:right;*/
+}
+.profile_photos_2{
   height:375px;
   width:225px;
 	vertical-align:top;
@@ -33,6 +41,9 @@ h3{
 	font-size: 30px;
 	text-decoration:underline;
 	text-shadow: 1px 1px 1px #FFFFFF;
+}
+h4{
+  left-margin:30px;
 }
 
 /* Style of orderer list*/
