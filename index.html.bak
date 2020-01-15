@@ -197,7 +197,7 @@
         <br><hr>
         <h4>Update: 27/12/2019</h4>
         <p class="articles">The team has been unemployed without advancing too much in the project due to the beginning of the second bimester classes, but the identification part of the traffic signals has begun to develop. The problem is based on identifying the ROI previously obtained and identifying which signal they belong to. To do this, based on current technology, Deep Learning and the tools proposed by it will be used.The first tests that have been carried out yield 75% of success, which is a good start for a fairly complex task. There is still a lot of work ahead.</p>
-        <p class="ach_photo_center"><img src="images/deep.jfif" alt="" class="achievement_photos_center2" style="height:350px; width:350px;"></p>
+        <p class="ach_photo_center"><img src="images/deep.jfif" alt="" class="achievement_photos_center2" style="height:300px; width:300px;"></p>
         <br><hr>
         <h4>Update: 02/01/2020</h4>
         <p class="articles">Continuing with the identification part, a series of algorithms for the treatment of images have been added, which has managed to raise the identification success rate to 81%. The tests has been that once the size of the entire database is standarized, it is passed to the image processing part. In the first iterations it was not carried out, but posteriori it was discovered that it was important. The equalization of the histogram allows to improve images that have little contrast, for example. In this case, the choice has been based on the CLAHE (Contrast Limiting Adaptive Histogram Equalization) function.</p>
